@@ -27,9 +27,9 @@ snippet beg
 	rescue ${1:Exception} => ${2:e}
 	end
 snippet req require
-	require '${1}'
+	require "${1}"
 snippet reqr
-	require_relative '${1}'
+	require_relative "${1}"
 snippet #
 	# =>
 snippet case
@@ -436,7 +436,7 @@ snippet dov
 		${2}
 	end
 snippet :
-	${1:key}: ${2:'value'}
+	${1:key}: ${2:"value"}
 snippet ope
 	open('${1:path/or/url/or/pipe}', '${2:w}') { |${3:io}| ${0} }
 # path_from_here()
@@ -600,7 +600,7 @@ snippet debug19
 snippet debug18
 	require 'ruby-debug'; debugger
 snippet pry
-	require 'pry'; binding.pry
+	require "pry"; binding.pry
 snippet strf
 	strftime('${1:%Y-%m-%d %H:%M:%S %z}')${0}
 #
@@ -672,11 +672,11 @@ snippet desc
 		${0}
 	end
 snippet descm
-	describe '${1:#method}' do
+	describe "${1:#method}" do
 		${0:pending 'Not implemented'}
 	end
 snippet cont
-	context '${1:message}' do
+	context "${1:message}" do
 		${0}
 	end
 snippet bef
@@ -708,7 +708,7 @@ snippet shared
 snippet ibl
 	it_behaves_like ${0:'shared examples name'}
 snippet it
-	it '${1:spec_name}' do
+	it "${1:spec_name}" do
 		${0}
 	end
 snippet its

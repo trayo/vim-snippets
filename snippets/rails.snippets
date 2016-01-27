@@ -116,9 +116,9 @@ snippet dele delegate .. to .. prefix .. allow_nil
 snippet amc
 	alias_method_chain :${1:method_name}, :${0:feature}
 snippet flash
-	flash[:${1:notice}] = '${0}'
+	flash[:${1:notice}] = "${0}"
 snippet habtm
-	has_and_belongs_to_many :${1:object}, join_table: '${2:table_name}', foreign_key: '${3}_id'
+	has_and_belongs_to_many :${1:object}, join_table: "${2:table_name}", foreign_key: "${3}_id"
 snippet hm
 	has_many :${0:object}
 snippet hmd
@@ -313,7 +313,7 @@ snippet vu
 snippet format
 	format.${1:js|xml|html} { ${0} }
 snippet wc
-	where(${1:'conditions'}${0:, bind_var})
+	where(${1:"conditions"}${0:, bind_var})
 snippet wf
 	where(${1:field}: ${0:value})
 snippet xdelete
