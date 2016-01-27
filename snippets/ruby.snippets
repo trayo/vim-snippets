@@ -198,7 +198,7 @@ snippet defs
 		${0}
 	end
 # def initialize
-snippet definit
+snippet init
 	def initialize(${1:args})
 		${0}
 	end
@@ -729,3 +729,15 @@ snippet agg
 	aggregate_failures '${1:message}' do
 		${0}
 	end
+snippet feat
+	feature "${1:#method}" do
+		${0:pending 'Not implemented'}
+	end
+snippet scen
+	scenario "${1:spec_name}" do
+		${0}
+	end
+snippet soap
+	save_and_open_page
+snippet pride
+	require "minitest/pride"
